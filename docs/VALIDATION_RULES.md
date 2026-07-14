@@ -23,8 +23,17 @@ Los estados no avanzan automáticamente. Las comprobaciones técnicas solo acept
 - Fuentes incompletas, inexistentes o sin localizador cuando corresponda.
 - `exam-validated` sin evidencia de examen.
 - `verified` sin aprobación explícita del usuario.
+- Identificadores duplicados de fuentes, fórmulas, ejemplos, ejercicios o preguntas.
+- Referencias a fuentes inexistentes desde evidencia académica, teoría, fórmulas, ejemplos, ejercicios o preguntas.
+- Fórmulas sin id, nombre, expresión, interpretación, variables completas o fuente.
+- Secciones teóricas sin id y, salvo marcadores técnicos, sin título, contenido o fuente.
+- Ejemplos sin id y, salvo demostraciones técnicas, sin resultado, interpretación o fuente.
+- Ejercicios sin id, sin solución o, salvo demostraciones técnicas, sin fuente.
+- Preguntas sin id, respuesta correcta, explicación o, salvo demostraciones técnicas, sin fuente.
 
 Los enlaces de navegación se construyen desde identificadores existentes y una ruta desconocida vuelve al inicio. En futuras incorporaciones Markdown se añadirá una comprobación específica de enlaces dentro del texto.
+
+Los placeholders curriculares siguen siendo válidos porque sus colecciones académicas están vacías y su evidencia curricular apunta al programa oficial. Una validación correcta no cambia el estado académico de ningún tema.
 
 ## Aprobación explícita
 
