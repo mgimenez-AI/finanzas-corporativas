@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-Estado inicial común: presencia verificada en el programa; desarrollo académico `identified` y pendiente.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.2, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por el Módulo 1 de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -20,3 +20,17 @@ Estado inicial común: presencia verificada en el programa; desarrollo académic
 ## Columnas controladas por tema
 
 Programa, teoría, fórmulas, variables, ejemplo resuelto, ejercicios, preguntas, fuentes, contraste con examen, estado académico y observaciones pendientes. La interfaz muestra una versión resumida y los datos tipados conservan el detalle.
+
+## Cobertura incorporada — Módulo 1 de 2026
+
+| Tema | Teoría | Fórmulas | Preguntas | Estado | Pendientes |
+|---|---|---|---|---|---|
+| 1.1 | Definición, tipos, conceptos, disciplinas auxiliares y evolución | No | 2 originales | `sourced` | Contraste práctico y revisión del usuario |
+| 1.2 | Objetivo moderno, stakeholders y medición de valor | EVA con variables y cautelas | 2 originales | `sourced` | Profundización de VPN/EVA y contraste con exámenes |
+| 1.3 | Inversión, financiamiento y dividendos | No | 2 originales | `sourced` | Ejemplos y contraste con decisiones específicas |
+| 2.2 | CFO, tesorero y controller | No | No | `sourced` | Módulo específico de función financiera |
+| 6.3-6.5 | Introducción a kd, ke y costo promedio del capital | No | No | `sourced` | Cálculo completo y ejercicios |
+| 7.2 | Introducción a VPN y EVA | Fórmula central en 1.2 | No | `sourced` | Desarrollo específico y evidencia de examen |
+| 7.4 | Agencia, contratos y grupos de interés | No | No | `sourced` | Precisar conflictos con material específico |
+
+Las preguntas fueron creadas para la aplicación y no se presentan como preguntas oficiales. Ningún tema queda `practiced`, `exam-validated` ni `verified`.

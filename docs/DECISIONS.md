@@ -47,3 +47,15 @@ Se incorporan iconos PNG originales A71 en 192 × 192, 512 × 512 y una variante
 ## D-012 — Trazabilidad profunda
 
 `validate:content` valida los `sourceIds` de evidencia académica, teoría, fórmulas, ejemplos, ejercicios y preguntas contra el catálogo general. También bloquea identificadores duplicados y campos académicos obligatorios. Estas reglas no promueven estados académicos.
+
+## D-013 — Incorporación del Módulo 1 de 2026
+
+La presentación `fc-2026-modulo-1-objetivos-alcance` desarrolla principalmente 1.1-1.3 y aporta conexiones introductorias explícitas con 2.2, 6.3-6.5, 7.2 y 7.4. Solo esos temas reciben contenido. Las menciones históricas de otros modelos no sustituyen sus módulos específicos.
+
+La evaluación incluida en la presentación se trata como contexto del curso 2026, no como regla del examen libre del 17/07/2026. Las atribuciones bibliográficas incompletas a Damodaran, Brealey/Myers/Allen y Dumrauf se referencian mediante la presentación hasta disponer de metadatos suficientes.
+
+Los temas intervenidos pasan a `sourced`, no a `practiced`, `exam-validated` ni `verified`. La pregunta abierta “finanzas sostenibles (¿finanzas sociales?)” se conserva como cautela y no como equivalencia afirmada.
+
+## D-014 — Presentación del contenido académico
+
+La vista de tema renderiza las secciones teóricas, fórmulas y preguntas ya contenidas en el modelo tipado. Mantiene un aviso visible de contenido preliminar y diferencia las preguntas originales de la aplicación de las preguntas de examen.
