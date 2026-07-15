@@ -81,3 +81,9 @@ Se incorporan por separado la presentación general de decisiones de inversión,
 Los casos de reemplazo de maquinaria e inversión con inflación no contienen soluciones. Por ello no se crean ejemplos resueltos ni ejercicios con respuestas inferidas; solo se documenta el conocimiento que exigen y la validación pendiente. Las convenciones de PAM, indexación, impuestos y redondeo deberán contrastarse con soluciones o pautas docentes.
 
 El lote mantiene los temas en `sourced`. No asigna `practiced`, `exam-validated` ni `verified`, y las preguntas incorporadas son originales de la aplicación, no reproducciones de evaluaciones.
+
+## D-018 — Incorporación del Módulo 5 de 2026
+
+Las tres presentaciones se integran como un único recorrido: fundamentos y medición en 5.1-5.2, teoría del portafolio en 5.3 y mercado de capitales/CAPM en 5.4-5.5. Se conservan las diferencias entre RMC —riesgo total y portafolios eficientes— y LMV —beta y cualquier activo—.
+
+Los datos históricos, índices y capturas fechadas se tratan como ilustraciones, no como insumos estables. Los ejemplos docentes se sintetizan conceptualmente y no se presentan como ejercicios oficiales. El lote permanece en `sourced`; no se promueve automáticamente ningún estado académico.
