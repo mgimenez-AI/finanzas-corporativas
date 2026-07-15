@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 5.1-5.5, 6.1-6.5, 7.1-7.10 y 9.1-9.4 incorporan contenido preliminar respaldado por presentaciones docentes y quedan en estado `sourced`; únicamente 8.1-8.3 permanece `identified` por falta de material específico.
+La presencia de los 40 subtemas está verificada en el programa. Los 40 incorporan contenido preliminar respaldado por una o más fuentes docentes y quedan al menos en estado `sourced`. Esto confirma cobertura trazable del inventario, no completitud académica, contraste con exámenes ni aprobación del usuario.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -114,3 +114,13 @@ La presentación denominada Módulo 8 se asigna a 7.10 según el inventario ofic
 | 9.4 | Cobertura, especulación, arbitraje y elección | Correspondencia exposición-instrumento | `sourced` |
 
 Las inconsistencias detectadas en gráficos y tablas quedan documentadas; ningún tema supera `sourced`.
+
+## Cobertura incorporada — Finanzas de corto plazo
+
+| Tema | Contenido | Fórmulas y ejemplos | Estado |
+|---|---|---|---|
+| 8.1 | Definiciones, componentes, ciclos, factores y coordinación | CTN, CT financiero, CCI, CCCC, CCCP, CCC y ejemplo de 129,5 días | `sourced` |
+| 8.2 | Liquidez, solvencia, insolvencia, alertas, ratios y lambda | RC, pruebas ácidas, CTN/activos, lambda y lectura conjunta | `sourced` |
+| 8.3 | Nivel óptimo, políticas, fuentes espontáneas, CCFG y caja | CCFG y ejemplo de 156 días | `sourced` |
+
+Con este lote los 40 subtemas tienen fuente docente y contenido estructurado. Permanecen pendientes práctica representativa adicional, contraste con exámenes y revisión expresa del usuario.
