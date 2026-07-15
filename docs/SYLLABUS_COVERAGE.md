@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.3, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -57,3 +57,15 @@ Ningún tema pasa a `practiced`, `exam-validated` ni `verified`.
 | 6.3-6.5 | Flujos de deuda, riesgo residual, CPC/WACC | Fórmula de CPC | `sourced` |
 
 El único ejemplo numérico del módulo es la valuación relativa URUGUAYCOM. Los temas no pasan a `practiced` hasta incorporar ejercicios representativos adicionales.
+
+## Cobertura incorporada — Módulo 4 de 2026
+
+| Tema | Cobertura | Fórmulas/procedimientos | Estado | Pendientes |
+|---|---|---|---|---|
+| 4.1 | VPN, TIR, B/C, repago, repago ajustado, Fisher y enfoque terminal | VPN, TIR y B/C; ranking por VPN | `sourced` | Ejercicios resueltos y convenciones de cálculo |
+| 4.2 | Flujo incremental, horizonte, residual, interdependencias y enfoques de inversión/accionista | Con proyecto menos sin proyecto | `sourced` | Caso de reemplazo sin solución oficial |
+| 4.3 | Correspondencia de TRR/CPC con flujo e indicador | Selección coherente de tasa | `sourced` | Estimación aplicada de tasas |
+| 4.4 | Precios corrientes y constantes, indexación, deflactación y PAM | Secuencia de construcción del flujo | `sourced` | Caso de inflación sin solución oficial |
+| 4.5 | Riesgo/incertidumbre, sensibilidad, escenarios, árboles, Hertz y Monte Carlo | Procedimientos cualitativos | `sourced` | Ejercicios y calibración probabilística |
+
+Los dos casos del archivo de ejemplos son enunciados sin solución. No se presentan como ejemplos resueltos ni elevan el estado académico.

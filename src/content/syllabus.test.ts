@@ -11,7 +11,7 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion'])
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre'])
     const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
   })
@@ -26,5 +26,12 @@ describe('inventario oficial', () => {
     expect(developed.map((topic) => topic.code)).toEqual(['3.1','3.2','3.3','4.3','6.3','6.4','6.5'])
     expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
     expect(topics.find((topic) => topic.code === '3.3')?.formulas.length).toBeGreaterThanOrEqual(5)
+  })
+  it('incorpora el Módulo 4 solo en decisiones de inversión', () => {
+    const main = topics.filter((topic) => topic.evidence.sourceIds.includes('fc-2026-modulo-4-decisiones-inversion'))
+    const uncertainty = topics.filter((topic) => topic.evidence.sourceIds.includes('fc-2026-modulo-4-incertidumbre'))
+    expect(main.map((topic) => topic.code)).toEqual(['4.1','4.2','4.3','4.4'])
+    expect(uncertainty.map((topic) => topic.code)).toEqual(['4.5'])
+    expect([...main, ...uncertainty].every((topic) => topic.status === 'sourced')).toBe(true)
   })
 })

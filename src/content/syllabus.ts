@@ -374,4 +374,74 @@ const topic65Module3 = addModule3Source('6.5')
 topic65Module3.theory.push({ id: 'theory-6-5-cpc-module3', heading: 'Costo promedio del capital', sourceIds: module3Source, preliminary: true, markdown: `La TRR de las inversiones combina el costo de deuda kd y el costo de fondos propios ke, ponderados por su participación en el financiamiento total. El módulo denomina esta tasa Costo Promedio del Capital (CPC) y la identifica con WACC.` })
 topic65Module3.formulas = [{ id: 'formula-wacc-01', name: 'Costo promedio del capital', expression: 'CPC = kd × D/(D+FP) + ke × FP/(D+FP)', variables: [{ symbol: 'CPC', name: 'Costo promedio del capital', definition: 'TRR de los activos financiados.' }, { symbol: 'kd', name: 'Costo de deuda', definition: 'Costo de fondos de terceros.' }, { symbol: 'ke', name: 'Costo de fondos propios', definition: 'TRR de propietarios.' }, { symbol: 'D', name: 'Deuda', definition: 'Monto de fondos de terceros.' }, { symbol: 'FP', name: 'Fondos propios', definition: 'Monto patrimonial.' }], assumptions: ['Los ponderadores suman uno.', 'Los costos y montos corresponden a una misma fecha y base.', 'El módulo no incorpora aquí un ajuste fiscal explícito en la fórmula.'], interpretation: 'Promedia costos de las fuentes según su peso financiero.', sourceIds: module3Source }]
 
+const module4Source = ['fc-2026-modulo-4-decisiones-inversion']
+const module4UncertaintySource = ['fc-2026-modulo-4-incertidumbre']
+const addModule4Source = (code: string, sourceIds = module4Source) => {
+  const item = units.flatMap((unit) => unit.topics).find((candidate) => candidate.code === code)
+  if (!item) throw new Error(`No se encontró el tema ${code}`)
+  item.status = 'sourced'
+  for (const sourceId of sourceIds) if (!item.evidence.sourceIds.includes(sourceId)) item.evidence.sourceIds.push(sourceId)
+  item.pendingNotes = ['Contenido respaldado por materiales docentes de la Unidad 4. Pendiente de soluciones oficiales de los casos, práctica adicional, contraste con exámenes y aprobación del usuario.']
+  return item
+}
+
+const topic41 = addModule4Source('4.1')
+topic41.theory = [
+  { id: 'theory-4-1-vpn-tir', heading: 'VPN y TIR', sourceIds: module4Source, preliminary: true, markdown: `El Valor Presente Neto es el valor presente de los flujos derivados de la inversión, descontados a su TRR, menos la inversión inicial. Se acepta cuando VPN ≥ 0 y se ordena por mayor VPN. Admite flujos no normales y tasas diferentes, pero no expresa el tamaño de la inversión.
+
+La TIR es la tasa que iguala el valor presente de los flujos con la inversión. Se acepta cuando TIR ≥ TRR. Con patrón normal suele existir una raíz; cambios múltiples de signo pueden producir TIR múltiples o falta de solución útil. Tampoco resuelve satisfactoriamente proyectos con tasas requeridas distintas.` },
+  { id: 'theory-4-1-bc-repago', heading: 'Relación beneficio-costo y repago', sourceIds: module4Source, preliminary: true, markdown: `La relación beneficio-costo divide el valor presente de beneficios entre el valor presente de la inversión. Se acepta cuando es mayor que uno.
+
+El repago mide el tiempo necesario para recuperar la inversión. Es simple, pero la versión tradicional ignora valor tiempo, flujos posteriores y distribución interna; puede aceptar VPN negativo o rechazar VPN positivo y no es una medida de rentabilidad. El repago ajustado descuenta los flujos antes de acumularlos.` },
+  { id: 'theory-4-1-reinversion-fisher', heading: 'Reinversión, conflictos y Fisher', sourceIds: module4Source, preliminary: true, markdown: `La TIR supone reinversión de flujos intermedios a la propia TIR; el VPN supone reinversión a la TRR, criterio más conservador cuando TRR < TIR.
+
+VPN, TIR y B/C coinciden sobre aceptar una inversión individual convencional, pero pueden ordenar distinto proyectos excluyentes. El conflicto aparece si las curvas VPN-TRR se cruzan en el cuadrante relevante y la TRR es menor que la tasa de Fisher. Fisher es la TIR de los flujos incrementales. Ante contradicción se elige el mayor VPN.` },
+  { id: 'theory-4-1-terminal', heading: 'Enfoque terminal', sourceIds: module4Source, preliminary: true, markdown: `El enfoque terminal explicita una tasa de reinversión: capitaliza los flujos intermedios hasta el fin de la vida útil, obtiene un valor terminal y calcula VPN terminal y TIR terminal. Coincide con VPN si la reinversión ocurre a TRR y con TIR si ocurre a la propia TIR.` }
+]
+topic41.formulas = [
+  { id: 'formula-vpn-01', name: 'Valor Presente Neto', expression: 'VPN = Σ[t=1..n] F_t/(1+k_t)^t - I0', variables: [{ symbol: 'F_t', name: 'Flujo', definition: 'Flujo neto del período t.' }, { symbol: 'k_t', name: 'Tasa', definition: 'TRR aplicable al flujo.' }, { symbol: 'I0', name: 'Inversión inicial', definition: 'Desembolso en cero.' }, { symbol: 'n', name: 'Vida útil', definition: 'Horizonte del proyecto.' }], assumptions: ['Flujos y tasas son coherentes en moneda, inflación, riesgo y período.'], interpretation: 'Mide valor creado en moneda del momento cero.', sourceIds: module4Source },
+  { id: 'formula-tir-01', name: 'Tasa Interna de Retorno', expression: '0 = Σ[t=1..n] F_t/(1+TIR)^t - I0', variables: [{ symbol: 'TIR', name: 'Tasa interna', definition: 'Tasa que hace VPN cero.' }, { symbol: 'F_t', name: 'Flujo', definition: 'Flujo del período.' }, { symbol: 'I0', name: 'Inversión', definition: 'Desembolso inicial.' }, { symbol: 'n', name: 'Vida', definition: 'Cantidad de períodos.' }], assumptions: ['La interpretación requiere revisar el patrón de signos.'], interpretation: 'Expresa la tasa implícita del flujo.', sourceIds: module4Source },
+  { id: 'formula-bc-01', name: 'Relación beneficio-costo', expression: 'B/C = VP(beneficios) / VP(inversión)', variables: [{ symbol: 'VP(beneficios)', name: 'Beneficios actualizados', definition: 'Valor presente de flujos positivos.' }, { symbol: 'VP(inversión)', name: 'Inversión actualizada', definition: 'Valor presente de desembolsos.' }], assumptions: ['Beneficios e inversión usan la misma tasa.'], interpretation: 'Indica beneficios presentes por unidad invertida.', sourceIds: module4Source }
+]
+topic41.questions = [{ id: 'question-4-1-01', type: 'multiple-choice', prompt: 'Ante conflicto entre VPN y TIR en proyectos excluyentes, ¿qué criterio prevalece?', options: ['Mayor VPN','Mayor TIR siempre','Menor inversión siempre'], correctAnswer: 'Mayor VPN', explanation: 'Es la solución general indicada por el módulo.', sourceIds: module4Source }, { id: 'question-4-1-02', type: 'multiple-choice', prompt: '¿Qué supuesto de reinversión usa la TIR?', options: ['Reinversión a la propia TIR','Reinversión a cero','Reinversión a inflación'], correctAnswer: 'Reinversión a la propia TIR', explanation: 'Es la condición implícita comparada con la TRR del VPN.', sourceIds: module4Source }]
+
+const topic42 = addModule4Source('4.2')
+topic42.theory = [
+  { id: 'theory-4-2-principios', heading: 'Principios para formular flujos', sourceIds: module4Source, preliminary: true, markdown: `Base caja: se consideran cobros y pagos, porque disponibilidad y fecha crean valor. Los bienes propios afectados al proyecto ingresan por su costo de oportunidad.
+
+Criterio incremental: flujo con proyecto menos flujo sin proyecto. Deben incluirse repercusiones positivas o negativas sobre actividades interdependientes.
+
+La vida útil es el horizonte relevante y al final se computa valor residual. Para evaluar la inversión en sí misma se excluyen financiamiento, intereses, amortizaciones y dividendos.` },
+  { id: 'theory-4-2-modelos', heading: 'Modelos de flujo', sourceIds: module4Source, preliminary: true, markdown: `El enfoque inversión mide rentabilidad independiente del financiamiento y descuenta al CPC. El enfoque del accionista o residual incorpora intereses, amortizaciones y aportes propios, y descuenta a la TRR patrimonial. El modelo de repago organiza flujos para identificar cuándo se recupera la inversión inicial.
+
+Variables docentes: ventas, costos, depreciaciones, gastos preliminares, inversiones y valores residuales deben tratarse incrementalmente y después de efectos tributarios cuando corresponda.` }
+]
+topic42.formulas = [{ id: 'formula-incremental-01', name: 'Regla con-sin', expression: 'Flujo incremental = Flujo con proyecto - Flujo sin proyecto', variables: [{ symbol: 'Flujo con proyecto', name: 'Escenario con inversión', definition: 'Cobros y pagos si se ejecuta.' }, { symbol: 'Flujo sin proyecto', name: 'Escenario base', definition: 'Cobros y pagos sin ejecutarla.' }], assumptions: ['Ambos escenarios usan el mismo horizonte y convenciones.'], interpretation: 'Aísla los efectos atribuibles al proyecto.', sourceIds: module4Source }]
+topic42.questions = [{ id: 'question-4-2-01', type: 'multiple-choice', prompt: '¿Debe incluirse un bien propio usado por el proyecto?', options: ['Sí, por su costo de oportunidad','No, porque no se compra','Solo por valor contable'], correctAnswer: 'Sí, por su costo de oportunidad', explanation: 'Su uso impide otra aplicación del recurso.', sourceIds: module4Source }]
+
+addModule4Source('4.3').theory.push({ id: 'theory-4-3-indicadores-module4', heading: 'La tasa en los indicadores de inversión', sourceIds: module4Source, preliminary: true, markdown: `El VPN y B/C descuentan a la TRR. El enfoque inversión usa CPC; el residual usa TRR de fondos propios. El repago ajustado también usa descuento. La elección de tasa puede alterar el orden entre proyectos y debe ser coherente con el flujo.` })
+
+const topic44 = addModule4Source('4.4')
+topic44.theory = [
+  { id: 'theory-4-4-corrientes', heading: 'Precios corrientes', sourceIds: module4Source, preliminary: true, markdown: `Se proyecta cada ingreso y egreso usando su índice específico, reconociendo cambios en precios relativos. Luego pueden deflactarse los flujos con un índice representativo del poder de compra de la empresa. Deben incluirse pérdidas por exposición de activos monetarios y mantener explícita la hipótesis de estructura financiera.` },
+  { id: 'theory-4-4-constantes', heading: 'Precios constantes', sourceIds: module4Source, preliminary: true, markdown: `Se expresan flujos a precios del momento cero y se descuentan con tasas reales. El enfoque supone precios relativos constantes, movimientos compatibles de precios, costos, revaluaciones e intereses, ausencia de rubros monetarios, equivalencia de renta económica y fiscal y estructura financiera constante. Si esos supuestos no se cumplen, el enfoque simplificado puede distorsionar el valor.` },
+  { id: 'theory-4-4-casos', heading: 'Casos docentes pendientes de solución', sourceIds: ['fc-2026-modulo-4-ejemplos'], preliminary: true, markdown: `El lote incluye un caso de reemplazo de maquinaria con venta del activo viejo, efecto fiscal, depreciación y ahorros, y un caso de inflación con IPC, índice salarial, índice de costos, capital de trabajo monetario, PAM y deflactación. No se suministran soluciones; quedan registrados como material pendiente y no como ejemplos resueltos.` }
+]
+topic44.questions = [{ id: 'question-4-4-01', type: 'multiple-choice', prompt: '¿Qué tasa corresponde a flujos en moneda constante?', options: ['Tasa real','Cualquier tasa nominal','TIR histórica'], correctAnswer: 'Tasa real', explanation: 'Debe mantenerse coherencia real-real.', sourceIds: module4Source }]
+
+const topic45 = addModule4Source('4.5', module4UncertaintySource)
+topic45.theory = [
+  { id: 'theory-4-5-riesgo', heading: 'Riesgo e incertidumbre', sourceIds: module4UncertaintySource, preliminary: true, markdown: `En riesgo se identifican eventos, dimensiones y probabilidades, permitiendo distribuciones objetivas. En incertidumbre se conocen eventos pero no sus probabilidades, por lo que se usan distribuciones subjetivas. La normal es útil pero puede sobreutilizarse y no representar asimetría, curtosis o colas.` },
+  { id: 'theory-4-5-aproximaciones', heading: 'Aproximaciones al tratamiento', sourceIds: module4UncertaintySource, preliminary: true, markdown: `Pronósticos conservadores usan valores pesimistas, con arbitrariedad y posible efecto multiplicador. Estimación a varios niveles usa pesimista, normal y optimista sin probabilidades.
+
+Tasa ajustada agrega riesgo a la tasa, con dificultad para estimar la prima. Equivalencia a certeza corrige cada flujo incierto y luego descuenta a Rf, pero el factor es difícil de determinar.
+
+Sensibilidad cambia variables individualmente, detecta factores cruciales, pero depende del analista, ignora probabilidades e interrelaciones. Escenarios cambian simultáneamente variables correlacionadas e incluyen factores micro y macro, pero tampoco asignan necesariamente probabilidades.` },
+  { id: 'theory-4-5-arboles', heading: 'Árboles de decisiones', sourceIds: module4UncertaintySource, preliminary: true, markdown: `Representan decisiones secuenciales, alternativas, resultados y probabilidades. Se calcula VPN cierto o esperado de cada alternativa y se selecciona la de mayor VPN esperado, retrocediendo desde resultados futuros hacia los nodos de decisión.` },
+  { id: 'theory-4-5-simulacion', heading: 'Hertz y Monte Carlo', sourceIds: module4UncertaintySource, preliminary: true, markdown: `Hertz desagrega variables de mercado, inversión y costos, asigna distribuciones —frecuentemente discretas como simplificación—, calcula VPN/TIR por alternativa y obtiene su distribución.
+
+Monte Carlo identifica variables críticas, distribuciones y correlaciones; genera conjuntamente valores aleatorios compatibles, calcula un flujo e indicador por escenario y repite miles de veces. El histograma aproxima la distribución, permitiendo media, percentiles, dispersión y probabilidad de inconveniencia. Ignorar correlaciones altera la desviación del indicador; el sentido depende de signos y correlación.` }
+]
+topic45.questions = [{ id: 'question-4-5-01', type: 'multiple-choice', prompt: '¿Qué diferencia central separa riesgo e incertidumbre?', options: ['Conocer probabilidades de los eventos','Usar siempre VPN','Tener flujos negativos'], correctAnswer: 'Conocer probabilidades de los eventos', explanation: 'En riesgo se conocen; en incertidumbre no.', sourceIds: module4UncertaintySource }, { id: 'question-4-5-02', type: 'multiple-choice', prompt: '¿Qué debe respetar una simulación Monte Carlo conjunta?', options: ['Distribuciones y correlaciones','Solo promedios','Solo escenarios pesimistas'], correctAnswer: 'Distribuciones y correlaciones', explanation: 'Ambas determinan el comportamiento conjunto.', sourceIds: module4UncertaintySource }]
+
 export const topics = units.flatMap((unit) => unit.topics)
