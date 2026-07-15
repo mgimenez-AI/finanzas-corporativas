@@ -7,6 +7,7 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `programa-a71-2026` | Programa oficial | Ficha de UC, vigencia marzo 2026 | Inspeccionado fuera del repositorio | Inventario y títulos oficiales |
 | `fc-2026-modulo-1-objetivos-alcance` | Presentación docente | FC 2026 — Módulo 1: Objetivos y alcance de las finanzas, 26 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 1.1-1.3 y conexiones introductorias con 2.2, 6.3-6.5, 7.2 y 7.4 |
 | `fc-2026-modulo-2-funcion-financiera` | Presentación docente | FC 2026 — Módulo 2: La función financiera en las empresas, 13 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 2.1 y 4.3; ampliación de 1.3 y 2.2 |
+| `fc-2026-modulo-3-elementos-valuacion` | Presentación docente | FC 2026 — Módulo 3: Elementos de valuación, 39 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 3.1-3.3 y ampliación de 4.3, 6.3-6.5 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -22,6 +23,13 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - La información de evaluación de la diapositiva 3 describe el curso 2026 y no se toma como regla del examen libre del 17/07/2026.
 - Las menciones a Damodaran, Brealey, Myers y Allen, y Dumrauf se trazan mediante la presentación hasta contar con referencias bibliográficas completas.
 - El archivo fuente permanece fuera del repositorio.
+
+## Notas del Módulo 3
+
+- La valuación por múltiplos exige comparables y variables homogéneas; el ejemplo URUGUAYCOM es didáctico, no evidencia de mercado.
+- La diapositiva denomina `P/EBITDA` a una relación de precio con EBITDA. Se conserva la atribución docente y queda pendiente precisar la definición exacta frente a otros usos de mercado.
+- CPC se identifica con WACC; la fórmula mostrada no incluye un ajuste fiscal explícito y no debe añadirse sin material posterior.
+- Los datos sectoriales de Damodaran de la diapositiva 37 son una ilustración temporal fechada 05/01/2026, no parámetros permanentes para ejercicios.
 
 ## Notas del Módulo 2
 

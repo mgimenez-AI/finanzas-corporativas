@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 4.3, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.3, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -45,3 +45,15 @@ Las preguntas fueron creadas para la aplicación y no se presentan como pregunta
 | 4.3 | Tasa de descuento, TRR, costo de oportunidad, riesgo y variación temporal | `k = Rf + p` | 3 originales | `sourced` | Estimación, inflación, moneda, plazos y ejercicios |
 
 Ningún tema pasa a `practiced`, `exam-validated` ni `verified`.
+
+## Cobertura incorporada — Módulo 3 de 2026
+
+| Tema | Cobertura | Elementos prácticos | Estado |
+|---|---|---|---|
+| 3.1 | Valor/precio/costo; criterios absolutos y relativos; selección del método | Fórmula de múltiplos y ejemplo resuelto | `sourced` |
+| 3.2 | Modelo de valor presente, base caja, tiempo y tasa | Fórmula general | `sourced` |
+| 3.3 | Créditos, bonos, acciones, Gordon, empresa y flujos libres | Cinco fórmulas y preguntas | `sourced` |
+| 4.3 | Correspondencia entre tasa y flujo | Ampliación conceptual | `sourced` |
+| 6.3-6.5 | Flujos de deuda, riesgo residual, CPC/WACC | Fórmula de CPC | `sourced` |
+
+El único ejemplo numérico del módulo es la valuación relativa URUGUAYCOM. Los temas no pasan a `practiced` hasta incorporar ejercicios representativos adicionales.

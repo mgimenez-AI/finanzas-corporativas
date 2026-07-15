@@ -11,7 +11,7 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera'])
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion'])
     const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
   })
@@ -20,5 +20,11 @@ describe('inventario oficial', () => {
     expect(developed.map((topic) => topic.code)).toEqual(['1.3','2.1','2.2','4.3'])
     expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
     expect(topics.find((topic) => topic.code === '4.3')?.formulas[0].id).toBe('formula-trr-01')
+  })
+  it('incorpora el Módulo 3 en valuación y relaciones explícitas', () => {
+    const developed = topics.filter((topic) => topic.evidence.sourceIds.includes('fc-2026-modulo-3-elementos-valuacion'))
+    expect(developed.map((topic) => topic.code)).toEqual(['3.1','3.2','3.3','4.3','6.3','6.4','6.5'])
+    expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
+    expect(topics.find((topic) => topic.code === '3.3')?.formulas.length).toBeGreaterThanOrEqual(5)
   })
 })
