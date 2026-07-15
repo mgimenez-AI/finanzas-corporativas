@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.2, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por el Módulo 1 de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 4.3, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -34,3 +34,14 @@ Programa, teoría, fórmulas, variables, ejemplo resuelto, ejercicios, preguntas
 | 7.4 | Agencia, contratos y grupos de interés | No | No | `sourced` | Precisar conflictos con material específico |
 
 Las preguntas fueron creadas para la aplicación y no se presentan como preguntas oficiales. Ningún tema queda `practiced`, `exam-validated` ni `verified`.
+
+## Cobertura incorporada — Módulo 2 de 2026
+
+| Tema | Cambio | Fórmulas | Preguntas | Estado | Pendientes |
+|---|---|---|---|---|---|
+| 1.3 | Criterio económico de inversión, fuentes y plazo, dividendos y recursos retenidos | No | Conserva las anteriores | `sourced` | Casos y ejercicios |
+| 2.1 | Unidades, flujos, intermediación, consumo intertemporal y tipos de mercados | No | 3 originales | `sourced` | Confirmar definición de mercado secundario |
+| 2.2 | Jerarquía CEO-CFO y funciones ampliadas de tesorero/controller | No | 2 originales | `sourced` | Contraste con casos organizacionales |
+| 4.3 | Tasa de descuento, TRR, costo de oportunidad, riesgo y variación temporal | `k = Rf + p` | 3 originales | `sourced` | Estimación, inflación, moneda, plazos y ejercicios |
+
+Ningún tema pasa a `practiced`, `exam-validated` ni `verified`.
