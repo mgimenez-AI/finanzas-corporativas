@@ -11,7 +11,7 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre', 'fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm', 'fc-2026-modulo-6-financiamiento-apalancamiento'])
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre', 'fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm', 'fc-2026-modulo-6-financiamiento-apalancamiento', 'fc-2026-modulo-7-1-estructura', 'fc-2026-modulo-7-2-modelos', 'fc-2026-modulo-8-dividendos'])
     const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
   })
@@ -45,5 +45,11 @@ describe('inventario oficial', () => {
     const developed = topics.filter((topic) => topic.evidence.sourceIds.includes('fc-2026-modulo-6-financiamiento-apalancamiento'))
     expect(developed.map((topic) => topic.code)).toEqual(['6.1','6.2','6.3','6.5'])
     expect(topics.find((topic) => topic.code === '6.2')?.formulas).toHaveLength(4)
+  })
+  it('cubre los diez temas oficiales de estructura financiera', () => {
+    const ids = new Set(['fc-2026-modulo-7-1-estructura', 'fc-2026-modulo-7-2-modelos', 'fc-2026-modulo-8-dividendos'])
+    const developed = topics.filter((topic) => topic.evidence.sourceIds.some((id) => ids.has(id)))
+    expect(developed.map((topic) => topic.code)).toEqual(['7.1','7.2','7.3','7.4','7.5','7.6','7.7','7.8','7.9','7.10'])
+    expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
   })
 })
