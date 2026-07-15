@@ -73,3 +73,11 @@ Dumrauf (2013) se registra como bibliografía secundaria `metadata-only`, con lo
 La presentación `fc-2026-modulo-3-elementos-valuacion` desarrolla 3.1-3.3 y aporta contenido explícito a 4.3 y 6.3-6.5. Se integran las fórmulas visibles en las diapositivas y se mantienen sus supuestos: Gordon requiere `k > g`; el CPC mostrado no incluye ajuste fiscal explícito.
 
 La mención `P/EBITDA` se conserva como terminología de la presentación, pero se documenta la necesidad de precisar su definición con materiales posteriores. La tabla de múltiplos de Damodaran se trata como ilustración fechada, no como dato estable ni fuente de parámetros para la aplicación.
+
+## D-017 — Incorporación del Módulo 4 de 2026
+
+Se incorporan por separado la presentación general de decisiones de inversión, los dos enunciados prácticos y la presentación específica de incertidumbre. El contenido se limita a 4.1-4.5 y conserva el tratamiento docente: el VPN prima al elegir proyectos mutuamente excluyentes y la tasa de Fisher es la TIR del flujo incremental.
+
+Los casos de reemplazo de maquinaria e inversión con inflación no contienen soluciones. Por ello no se crean ejemplos resueltos ni ejercicios con respuestas inferidas; solo se documenta el conocimiento que exigen y la validación pendiente. Las convenciones de PAM, indexación, impuestos y redondeo deberán contrastarse con soluciones o pautas docentes.
+
+El lote mantiene los temas en `sourced`. No asigna `practiced`, `exam-validated` ni `verified`, y las preguntas incorporadas son originales de la aplicación, no reproducciones de evaluaciones.
