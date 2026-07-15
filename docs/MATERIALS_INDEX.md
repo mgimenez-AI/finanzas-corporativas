@@ -18,6 +18,8 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `fc-2026-modulo-7-1-estructura` | Presentación docente | FC 2026 — Módulo 7.1: estructura financiera, parte I, 45 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 7.1-7.5 |
 | `fc-2026-modulo-7-2-modelos` | Presentación docente | FC 2026 — Módulo 7.2: modelos de estructura financiera, 24 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 7.6-7.9 |
 | `fc-2026-modulo-8-dividendos` | Presentación docente | FC 2026 — Módulo 8: política de dividendos, 34 diapositivas | Inspeccionado fuera del repositorio | Desarrollo del subtema oficial 7.10 |
+| `fc-2026-modulo-10-derivados-1` | Presentación docente | FC 2026 — Instrumentos derivados I, 31 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 9.1-9.4 |
+| `fc-modulo-10-derivados-2` | Presentación docente | Instrumentos derivados II: swaps, 18 diapositivas; año no visible | Inspeccionado fuera del repositorio | Ampliación de 9.3-9.4 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -65,6 +67,12 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - La numeración docente “Módulo 8” corresponde al subtema oficial 7.10; no se asigna a la Unidad 8 curricular de corto plazo.
 - Los ejemplos legales, fiscales y de mercado se conservan como referencias de la presentación y requieren verificación de vigencia antes de aplicarse.
 - Los ejemplos numéricos ilustran modelos, pero no se convierten en ejercicios oficiales ni elevan estados académicos.
+
+## Notas de derivados
+
+- La numeración “Módulo 10” se mapea a la Unidad 9 oficial porque las portadas internas identifican instrumentos derivados como 9.
+- Se documentan dos inconsistencias: el beneficio de long put no es ilimitado con precio no negativo, y el equilibrio de short call es strike más prima.
+- La regla general de no intercambiar principal en swaps se matiza: los swaps de moneda pueden intercambiar principal e intereses.
 
 ## Notas del Módulo 2
 

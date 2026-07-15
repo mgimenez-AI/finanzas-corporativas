@@ -99,3 +99,9 @@ Los ejemplos se usan para interpretar las fórmulas, sin copiar tablas extensas.
 Las partes 7.1 y 7.2 cubren 7.1-7.9. El archivo docente “Módulo 8 Política de Dividendos” se integra en 7.10 porque el programa oficial ubica allí inversiones, financiamiento y dividendos; no se confunde con la Unidad 8 oficial de finanzas de corto plazo.
 
 M&M, teoría tradicional y trade-off se mantienen como marcos distintos con sus supuestos. Las menciones a normativa, impuestos y evidencia de mercado se documentan como material docente sujeto a vigencia. Todos los temas quedan como máximo en `sourced`.
+
+## D-021 — Incorporación de instrumentos derivados
+
+Los archivos denominados Módulo 10 se asignan a la Unidad 9 oficial, coherente con sus portadas internas. Se integran opciones, futuros, forwards, swaps y gestión de riesgos sin incorporar calculadoras ni posiciones recomendadas.
+
+No se corrigen silenciosamente tres ambigüedades: long put tiene ganancia acotada si el subyacente no puede ser negativo; short call equilibra en strike más prima; y el no intercambio de principal caracteriza al swap de tasa simple, no necesariamente al de moneda. Se enseña la relación estándar y se deja la diferencia visible para confirmación docente.

@@ -11,7 +11,7 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre', 'fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm', 'fc-2026-modulo-6-financiamiento-apalancamiento', 'fc-2026-modulo-7-1-estructura', 'fc-2026-modulo-7-2-modelos', 'fc-2026-modulo-8-dividendos'])
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre', 'fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm', 'fc-2026-modulo-6-financiamiento-apalancamiento', 'fc-2026-modulo-7-1-estructura', 'fc-2026-modulo-7-2-modelos', 'fc-2026-modulo-8-dividendos', 'fc-2026-modulo-10-derivados-1', 'fc-modulo-10-derivados-2'])
     const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
   })
@@ -50,6 +50,12 @@ describe('inventario oficial', () => {
     const ids = new Set(['fc-2026-modulo-7-1-estructura', 'fc-2026-modulo-7-2-modelos', 'fc-2026-modulo-8-dividendos'])
     const developed = topics.filter((topic) => topic.evidence.sourceIds.some((id) => ids.has(id)))
     expect(developed.map((topic) => topic.code)).toEqual(['7.1','7.2','7.3','7.4','7.5','7.6','7.7','7.8','7.9','7.10'])
+    expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
+  })
+  it('incorpora derivados en los cuatro temas oficiales de la Unidad 9', () => {
+    const ids = new Set(['fc-2026-modulo-10-derivados-1', 'fc-modulo-10-derivados-2'])
+    const developed = topics.filter((topic) => topic.evidence.sourceIds.some((id) => ids.has(id)))
+    expect(developed.map((topic) => topic.code)).toEqual(['9.1','9.2','9.3','9.4'])
     expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
   })
 })
