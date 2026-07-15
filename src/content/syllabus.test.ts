@@ -11,7 +11,14 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.includes('fc-2026-modulo-1-objetivos-alcance'))
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera'])
+    const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
+  })
+  it('incorpora el Módulo 2 solo en los temas aprobados', () => {
+    const developed = topics.filter((topic) => topic.evidence.sourceIds.includes('fc-2026-modulo-2-funcion-financiera'))
+    expect(developed.map((topic) => topic.code)).toEqual(['1.3','2.1','2.2','4.3'])
+    expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
+    expect(topics.find((topic) => topic.code === '4.3')?.formulas[0].id).toBe('formula-trr-01')
   })
 })

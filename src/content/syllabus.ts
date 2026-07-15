@@ -184,4 +184,121 @@ for (const [code, heading, markdown] of [
   item.theory = [{ id: `theory-${code.replace('.', '-')}-module1`, heading, markdown, sourceIds: module1Source, preliminary: true }]
 }
 
+const module2Source = ['fc-2026-modulo-2-funcion-financiera']
+const addModule2Source = (code: string) => {
+  const item = units.flatMap((unit) => unit.topics).find((candidate) => candidate.code === code)
+  if (!item) throw new Error(`No se encontró el tema ${code}`)
+  item.status = 'sourced'
+  if (!item.evidence.sourceIds.includes(module2Source[0])) item.evidence.sourceIds.push(...module2Source)
+  item.pendingNotes = ['Contenido respaldado por presentaciones docentes de 2026. Pendiente de ejercicios, contraste con exámenes aplicables y aprobación expresa del usuario.']
+  return item
+}
+
+addModule2Source('1.3').theory.push({
+  id: 'theory-1-3-criterios-module2', heading: 'Criterio económico de las decisiones', sourceIds: module2Source, preliminary: true,
+  markdown: `La decisión de inversión busca incorporar activos que, integrados a la organización, generen más dinero que su costo. Es una asignación de recursos a través del tiempo.
+
+La decisión de financiamiento determina fuentes apropiadas para sostener las inversiones, obtenidas directamente o mediante mercados financieros. También exige considerar su plazo, por ejemplo corto o largo plazo. La presentación habla de fuentes “óptimas”, pero no desarrolla todavía un procedimiento para calcular esa combinación.
+
+La política de dividendos decide cómo y cuándo remunerar al accionista. Distribuir recursos retribuye al propietario, pero también reduce los fondos que permanecen disponibles en la empresa.`
+})
+
+const topic21 = addModule2Source('2.1')
+topic21.theory = [
+  {
+    id: 'theory-2-1-unidades', heading: 'Unidades superavitarias y deficitarias', sourceIds: module2Source, preliminary: true,
+    markdown: `Los mercados financieros conectan unidades que disponen de fondos con unidades que necesitan obtenerlos.
+
+Una unidad superavitaria posterga consumo presente y ofrece recursos. Una unidad deficitaria anticipa consumo o financia inversión mediante recursos recibidos. La presentación utiliza hogares o personas y empresas como ejemplos, respectivamente; no son categorías permanentes, porque cualquier agente puede cambiar de posición financiera.
+
+El dinero fluye hacia la unidad deficitaria y, en sentido opuesto, se entrega un activo financiero (AF) que representa derechos para el proveedor de fondos y obligaciones para quien los recibe.`
+  },
+  {
+    id: 'theory-2-1-funciones', heading: 'Funciones de los mercados financieros', sourceIds: module2Source, preliminary: true,
+    markdown: `Los mercados financieros transfieren fondos desde unidades superavitarias hacia unidades deficitarias. De esta forma proveen financiamiento y facilitan procesos de inversión y crecimiento.
+
+También hacen posible trasladar consumo entre momentos: el proveedor de fondos posterga consumo y el receptor lo anticipa. Esa transferencia intertemporal explica por qué una cantidad futura debe relacionarse con una cantidad presente mediante una tasa de descuento.`
+  },
+  {
+    id: 'theory-2-1-intermediacion', heading: 'Relación directa e intermediación', sourceIds: module2Source, preliminary: true,
+    markdown: `En una relación directa, la unidad deficitaria obtiene fondos y entrega activos financieros a los aportantes mediante el mercado.
+
+La transferencia también puede canalizarse mediante intermediarios financieros. El módulo identifica bancos, fondos de inversión y compañías de seguros. No desarrolla todavía la transformación de plazos, la regulación ni la creación de dinero; esos contenidos no deben inferirse de este esquema introductorio.`
+  },
+  {
+    id: 'theory-2-1-tipos-mercado', heading: 'Tipos de mercados financieros', sourceIds: module2Source, preliminary: true,
+    markdown: `La presentación clasifica los mercados desde criterios diferentes, que pueden superponerse:
+
+• Mercado de dinero o monetario: corto plazo.
+• Mercado de capitales: financiamiento de largo plazo.
+• Mercado de derivados: productos financieros complejos.
+• Mercado de cambios o divisas: intercambio de monedas.
+• Mercado de seguros: activos de cobertura.
+• Mercado interbancario: préstamos entre bancos.
+• Mercado primario: nuevas emisiones.
+• Renta fija: instrumentos de deuda.
+• Renta variable: acciones.
+
+La diapositiva también asigna “nuevas emisiones” al mercado secundario. Esa redacción se registra como inconsistencia pendiente y no se incorpora como definición válida.`
+  }
+]
+topic21.questions = [
+  { id: 'question-2-1-01', type: 'multiple-choice', prompt: '¿Qué función cumplen los mercados financieros entre unidades superavitarias y deficitarias?', options: ['Canalizan fondos entre ambas', 'Eliminan todo riesgo financiero', 'Garantizan rentabilidad a los aportantes'], correctAnswer: 'Canalizan fondos entre ambas', explanation: 'Permiten transferir recursos desde quienes los ofrecen hacia quienes necesitan financiamiento.', sourceIds: module2Source },
+  { id: 'question-2-1-02', type: 'multiple-choice', prompt: '¿Qué ocurre con el consumo de una unidad superavitaria cuando aporta fondos?', options: ['Posterga consumo presente', 'Anticipa consumo futuro', 'Elimina definitivamente su consumo'], correctAnswer: 'Posterga consumo presente', explanation: 'Entrega recursos actuales a cambio de derechos financieros vinculados con recursos futuros.', sourceIds: module2Source },
+  { id: 'question-2-1-03', type: 'multiple-choice', prompt: '¿Cuál es un intermediario financiero mencionado en el módulo?', options: ['Banco', 'Mercado primario', 'Acción ordinaria'], correctAnswer: 'Banco', explanation: 'El material menciona bancos, fondos de inversión y compañías de seguros.', sourceIds: module2Source }
+]
+
+const topic22Module2 = addModule2Source('2.2')
+topic22Module2.theory.push({
+  id: 'theory-2-2-jerarquia-module2', heading: 'Jerarquía y ampliación de responsabilidades', sourceIds: module2Source, preliminary: true,
+  markdown: `El organigrama docente ubica al gerente general (CEO) sobre el gerente financiero (CFO). Bajo el CFO aparecen las funciones de tesorería y controller.
+
+El tesorero se relaciona con flujo de fondos, administración de créditos, decisiones de inversión y financiamiento, y planificación financiera. Estas tareas complementan las ya identificadas en el Módulo 1: gestión de efectivo, gastos de capital, relaciones bancarias y estrategia.
+
+El controller se relaciona con contabilidad, sistemas de información, contabilidad de costos e impuestos. Se integran con estados financieros y procesamiento de datos mencionados en el Módulo 1. La estructura es ilustrativa: las responsabilidades pueden distribuirse de otro modo según la organización.`
+})
+topic22Module2.questions = [
+  { id: 'question-2-2-01', type: 'multiple-choice', prompt: '¿Qué función se asocia con el tesorero en el organigrama del módulo?', options: ['Administración de créditos', 'Contabilidad de costos', 'Liquidación exclusiva de impuestos'], correctAnswer: 'Administración de créditos', explanation: 'El módulo asigna al tesorero flujo de fondos, créditos, decisiones financieras y planificación.', sourceIds: module2Source },
+  { id: 'question-2-2-02', type: 'multiple-choice', prompt: '¿Qué función se asocia con el controller?', options: ['Sistemas de información', 'Selección exclusiva de inversiones', 'Intermediación bancaria'], correctAnswer: 'Sistemas de información', explanation: 'Contabilidad, sistemas de información, costos e impuestos aparecen bajo controller.', sourceIds: module2Source }
+]
+
+const topic43 = addModule2Source('4.3')
+topic43.theory = [
+  {
+    id: 'theory-4-3-concepto', heading: 'Tasa de descuento y valor presente', sourceIds: module2Source, preliminary: true,
+    markdown: `La tasa de descuento relaciona consumo presente y futuro y permite calcular el valor presente de importes futuros. Por eso constituye la base conceptual del Valor Presente Neto (VPN).
+
+En el mercado se observan múltiples tasas, asociadas, entre otros factores, con geografía, sector, tiempo y riesgo de los flujos. No existe una tasa única que deba aplicarse automáticamente a toda decisión. La tasa relevante puede variar a través del tiempo.`
+  },
+  {
+    id: 'theory-4-3-trr', heading: 'Tasa de Retorno Requerida', sourceIds: module2Source, preliminary: true,
+    markdown: `La Tasa de Retorno Requerida (TRR) es la compensación que exige un proveedor de fondos por renunciar al consumo presente y asumir el riesgo de invertir en un activo específico.
+
+También representa el costo de oportunidad de elegir un activo frente a alternativas disponibles. El mercado aporta referencias para observar una tasa libre de riesgo y premios por riesgo. La gerencia financiera debe determinar una TRR coherente con los flujos que evalúa.
+
+El módulo no establece todavía cómo seleccionar la tasa libre de riesgo ni cómo estimar la prima. Tampoco define tratamiento de inflación, periodicidad o estructura temporal; esos aspectos permanecen pendientes.`
+  },
+  {
+    id: 'theory-4-3-errores', heading: 'Cautelas de aplicación', sourceIds: module2Source, preliminary: true,
+    markdown: `No debe utilizarse cualquier tasa observable sin relacionarla con las características y el riesgo de los flujos. Tampoco debe asumirse que la tasa es constante si el análisis requiere reconocer variaciones temporales.
+
+La prima por riesgo no es una constante universal. La representación introductoria de este módulo no debe confundirse automáticamente con CAPM, costo de fondos propios o costo promedio del capital.`
+  }
+]
+topic43.formulas = [{
+  id: 'formula-trr-01', name: 'Tasa de Retorno Requerida', expression: 'k = Rf + p',
+  variables: [
+    { symbol: 'k', name: 'Tasa de retorno requerida', definition: 'Rendimiento exigido para compensar espera y riesgo.', unit: 'tasa por período' },
+    { symbol: 'Rf', name: 'Tasa libre de riesgo', definition: 'Referencia de mercado para diferir consumo sin asumir el riesgo específico considerado.', unit: 'tasa por período' },
+    { symbol: 'p', name: 'Premio por riesgo', definition: 'Compensación adicional exigida por el riesgo del activo o de sus flujos.', unit: 'tasa por período' }
+  ],
+  assumptions: ['Rf, p y k deben corresponder al mismo período y convención.', 'La fórmula es introductoria y no define el método de estimación de sus componentes.', 'La tasa debe ser coherente con riesgo, moneda e inflación de los flujos; estos ajustes se desarrollarán con materiales posteriores.'],
+  interpretation: 'La rentabilidad requerida combina compensación por diferir consumo y compensación por riesgo.', sourceIds: module2Source
+}]
+topic43.questions = [
+  { id: 'question-4-3-01', type: 'multiple-choice', prompt: '¿Qué representa la TRR para un proveedor de fondos?', options: ['Compensación por espera y riesgo', 'Una tasa contable histórica', 'La inflación observada exclusivamente'], correctAnswer: 'Compensación por espera y riesgo', explanation: 'Compensa la renuncia al consumo presente y el riesgo del activo específico.', sourceIds: module2Source },
+  { id: 'question-4-3-02', type: 'multiple-choice', prompt: '¿Por qué no corresponde aplicar una misma tasa a cualquier flujo?', options: ['Porque las tasas se relacionan con características, tiempo y riesgo de los flujos', 'Porque el valor presente nunca utiliza tasas', 'Porque toda tasa debe ser cero'], correctAnswer: 'Porque las tasas se relacionan con características, tiempo y riesgo de los flujos', explanation: 'El módulo destaca que existen múltiples tasas y que pueden variar en el tiempo.', sourceIds: module2Source },
+  { id: 'question-4-3-03', type: 'multiple-choice', prompt: 'En k = Rf + p, ¿qué representa p?', options: ['Premio por riesgo', 'Valor presente', 'Pago de dividendos'], correctAnswer: 'Premio por riesgo', explanation: 'Es la compensación adicional exigida por asumir riesgo.', sourceIds: module2Source }
+]
+
 export const topics = units.flatMap((unit) => unit.topics)

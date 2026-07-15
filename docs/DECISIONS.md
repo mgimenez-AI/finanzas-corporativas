@@ -59,3 +59,11 @@ Los temas intervenidos pasan a `sourced`, no a `practiced`, `exam-validated` ni 
 ## D-014 — Presentación del contenido académico
 
 La vista de tema renderiza las secciones teóricas, fórmulas y preguntas ya contenidas en el modelo tipado. Mantiene un aviso visible de contenido preliminar y diferencia las preguntas originales de la aplicación de las preguntas de examen.
+
+## D-015 — Incorporación del Módulo 2 de 2026
+
+La presentación `fc-2026-modulo-2-funcion-financiera` desarrolla 2.1 y 4.3 y amplía 1.3 y 2.2. Solo esos cuatro temas reciben la nueva fuente. La fórmula `k = Rf + p` se registra como relación introductoria; no se infiere un método para estimar la tasa libre de riesgo o el premio por riesgo.
+
+La diapositiva 13 etiqueta tanto el mercado primario como el secundario con “nuevas emisiones”. Se conserva constancia de la redacción, pero no se incorpora la segunda mención como definición académica válida hasta contar con aclaración docente. No se corrige silenciosamente.
+
+Dumrauf (2013) se registra como bibliografía secundaria `metadata-only`, con los localizadores indicados por la presentación. Los temas continúan como máximo en `sourced`.
