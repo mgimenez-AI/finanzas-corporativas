@@ -14,6 +14,7 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `fc-2026-modulo-5-1-riesgo` | Presentación docente | FC 2026 — Módulo 5.1: riesgo, parte I, 37 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.1-5.2 |
 | `fc-2026-modulo-5-2-portafolio` | Presentación docente | FC 2026 — Módulo 5.2: teoría del portafolio, 40 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.1 y 5.3 |
 | `fc-2026-modulo-5-3-capm` | Presentación docente | FC 2026 — Módulo 5.3: mercado de capitales y CAPM, 44 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.4-5.5 |
+| `fc-2026-modulo-6-financiamiento-apalancamiento` | Presentación docente | FC 2026 — Módulo 6: decisiones de financiamiento y apalancamiento, 55 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 6.1-6.3 y ampliación de 6.5 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -49,6 +50,12 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - Los datos históricos de mercados y capturas fechadas ilustran relaciones riesgo-retorno; no son parámetros permanentes.
 - Las fórmulas estadísticas distinguen estimación muestral y relaciones de modelo. CAPM y la RMC conservan sus supuestos explícitos.
 - Los ejemplos numéricos de las diapositivas son demostraciones docentes; no se reproducen extensamente ni elevan por sí solos el estado a `practiced`.
+
+## Notas del Módulo 6
+
+- Los indicadores LO, LF y LC se presentan como exposición para un nivel de actividad, no como medidas probabilísticas de riesgo.
+- La recomendación de endeudarse según el diferencial ROA-costo se conserva condicionada: mayor ROE no implica por sí solo creación de valor.
+- El costo de deuda se registra como TIR del flujo completo del deudor, incluidos gastos y efectos fiscales aplicables.
 
 ## Notas del Módulo 2
 

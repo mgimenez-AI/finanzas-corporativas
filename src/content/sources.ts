@@ -11,6 +11,7 @@ export const sources: SourceRef[] = [
   { id: 'fc-2026-modulo-5-1-riesgo', title: 'FC 2026 — Módulo 5.1: Riesgo, parte I', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-37', access: 'available' },
   { id: 'fc-2026-modulo-5-2-portafolio', title: 'FC 2026 — Módulo 5.2: Teoría del portafolio', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-40', access: 'available' },
   { id: 'fc-2026-modulo-5-3-capm', title: 'FC 2026 — Módulo 5.3: Mercado de capitales y CAPM', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-44', access: 'available' },
+  { id: 'fc-2026-modulo-6-financiamiento-apalancamiento', title: 'FC 2026 — Módulo 6: Decisiones de financiamiento y apalancamiento', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-55', access: 'available' },
   { id: 'pascale-2009', title: 'Decisiones Financieras', authors: ['Ricardo Pascale'], type: 'bibliography', edition: '6.ª', year: 2009, access: 'metadata-only' },
   { id: 'ross-westerfield-jaffe-2012', title: 'Finanzas Corporativas', authors: ['Stephen Ross', 'Randolph Westerfield', 'Jeffrey Jaffe'], type: 'bibliography', edition: '9.ª o posterior', year: 2012, access: 'metadata-only' },
   { id: 'dumrauf-2013', title: 'Finanzas Corporativas: un enfoque latinoamericano', authors: ['Guillermo Dumrauf'], type: 'bibliography', edition: '2.ª', year: 2013, locator: 'Cap. 1, secciones 1.1-1.4, 1.6 y 1.8 (referencia indicada por la presentación docente)', access: 'metadata-only' }
