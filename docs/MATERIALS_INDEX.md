@@ -20,6 +20,7 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `fc-2026-modulo-8-dividendos` | Presentación docente | FC 2026 — Módulo 8: política de dividendos, 34 diapositivas | Inspeccionado fuera del repositorio | Desarrollo del subtema oficial 7.10 |
 | `fc-2026-modulo-10-derivados-1` | Presentación docente | FC 2026 — Instrumentos derivados I, 31 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 9.1-9.4 |
 | `fc-modulo-10-derivados-2` | Presentación docente | Instrumentos derivados II: swaps, 18 diapositivas; año no visible | Inspeccionado fuera del repositorio | Ampliación de 9.3-9.4 |
+| `fc-2026-modulo-9-finanzas-corto-plazo` | Presentación docente | FC 2026 — Módulo 9: Finanzas de corto plazo, 62 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de los subtemas oficiales 8.1-8.3 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -73,6 +74,13 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - La numeración “Módulo 10” se mapea a la Unidad 9 oficial porque las portadas internas identifican instrumentos derivados como 9.
 - Se documentan dos inconsistencias: el beneficio de long put no es ilimitado con precio no negativo, y el equilibrio de short call es strike más prima.
 - La regla general de no intercambiar principal en swaps se matiza: los swaps de moneda pueden intercambiar principal e intereses.
+
+## Notas de Finanzas de corto plazo
+
+- La numeración docente “Módulo 9” corresponde a la Unidad 8 oficial; la Unidad 9 curricular continúa siendo Instrumentos derivados.
+- Se distinguen CTN contable y capital de trabajo financiero basado en pasivos espontáneos.
+- El ejemplo de CCFG presenta aproximadamente 4.420, mientras que los saldos visibles producen 4.381; la diferencia queda pendiente.
+- Los semáforos de liquidez, la convención de brechas y la denominación de rotación de activos contienen ambigüedades documentadas en `DECISIONS.md`.
 
 ## Notas del Módulo 2
 

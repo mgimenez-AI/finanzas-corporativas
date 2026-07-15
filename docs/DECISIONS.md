@@ -105,3 +105,11 @@ M&M, teoría tradicional y trade-off se mantienen como marcos distintos con sus 
 Los archivos denominados Módulo 10 se asignan a la Unidad 9 oficial, coherente con sus portadas internas. Se integran opciones, futuros, forwards, swaps y gestión de riesgos sin incorporar calculadoras ni posiciones recomendadas.
 
 No se corrigen silenciosamente tres ambigüedades: long put tiene ganancia acotada si el subyacente no puede ser negativo; short call equilibra en strike más prima; y el no intercambio de principal caracteriza al swap de tasa simple, no necesariamente al de moneda. Se enseña la relación estándar y se deja la diferencia visible para confirmación docente.
+
+## D-022 — Incorporación de Finanzas de corto plazo
+
+El archivo docente “Módulo 9” se asigna a 8.1-8.3 según el programa oficial; su numeración no desplaza derivados de la Unidad 9. Se integran exclusivamente esos tres temas y no se modifican unidades relacionadas solo por los ratios transversales de las últimas diapositivas.
+
+Se conservan y explicitan las siguientes diferencias: la política moderada no garantiza CTN cero si activos corrientes permanentes se financian a largo plazo; los semáforos aparecen rojos aunque el texto califica algunos ratios favorablemente; la brecha no define con precisión su convención de signo; `CCP` y `CCCP` se alternan; Ventas/Activos totales está rotulado como activos fijos; y el CCFG informado como 4.420 no concilia con los saldos, que dan 4.381.
+
+La aplicación usa fórmulas técnicamente consistentes y conserva una nota editorial sobre la redacción docente. Los tres temas pasan a `sourced`, no a `practiced`, `exam-validated` ni `verified`.
