@@ -67,3 +67,9 @@ La presentación `fc-2026-modulo-2-funcion-financiera` desarrolla 2.1 y 4.3 y am
 La diapositiva 13 etiqueta tanto el mercado primario como el secundario con “nuevas emisiones”. Se conserva constancia de la redacción, pero no se incorpora la segunda mención como definición académica válida hasta contar con aclaración docente. No se corrige silenciosamente.
 
 Dumrauf (2013) se registra como bibliografía secundaria `metadata-only`, con los localizadores indicados por la presentación. Los temas continúan como máximo en `sourced`.
+
+## D-016 — Incorporación del Módulo 3 de 2026
+
+La presentación `fc-2026-modulo-3-elementos-valuacion` desarrolla 3.1-3.3 y aporta contenido explícito a 4.3 y 6.3-6.5. Se integran las fórmulas visibles en las diapositivas y se mantienen sus supuestos: Gordon requiere `k > g`; el CPC mostrado no incluye ajuste fiscal explícito.
+
+La mención `P/EBITDA` se conserva como terminología de la presentación, pero se documenta la necesidad de precisar su definición con materiales posteriores. La tabla de múltiplos de Damodaran se trata como ilustración fechada, no como dato estable ni fuente de parámetros para la aplicación.
