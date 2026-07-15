@@ -87,3 +87,9 @@ El lote mantiene los temas en `sourced`. No asigna `practiced`, `exam-validated`
 Las tres presentaciones se integran como un único recorrido: fundamentos y medición en 5.1-5.2, teoría del portafolio en 5.3 y mercado de capitales/CAPM en 5.4-5.5. Se conservan las diferencias entre RMC —riesgo total y portafolios eficientes— y LMV —beta y cualquier activo—.
 
 Los datos históricos, índices y capturas fechadas se tratan como ilustraciones, no como insumos estables. Los ejemplos docentes se sintetizan conceptualmente y no se presentan como ejercicios oficiales. El lote permanece en `sourced`; no se promueve automáticamente ningún estado académico.
+
+## D-019 — Incorporación del Módulo 6 de 2026
+
+La presentación desarrolla 6.1-6.3 y aporta una relación explícita a 6.5. El efecto leverage se enseña como amplificación del ROE, pero la aplicación documenta que el diferencial favorable no sustituye la comparación con el costo de capital ni una evaluación integral del riesgo.
+
+Los ejemplos se usan para interpretar las fórmulas, sin copiar tablas extensas. No se atribuye cobertura nueva a 6.4 porque este archivo no desarrolla por separado la estimación de fondos propios; se conserva allí el contenido previo trazado a los módulos 3 y 5.
