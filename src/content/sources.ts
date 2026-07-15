@@ -15,6 +15,8 @@ export const sources: SourceRef[] = [
   { id: 'fc-2026-modulo-7-1-estructura', title: 'FC 2026 — Módulo 7.1: Estructura financiera, parte I', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-45', access: 'available' },
   { id: 'fc-2026-modulo-7-2-modelos', title: 'FC 2026 — Módulo 7.2: Estructura financiera, parte II', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-24', access: 'available' },
   { id: 'fc-2026-modulo-8-dividendos', title: 'FC 2026 — Módulo 8: Política de dividendos', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-34', access: 'available' },
+  { id: 'fc-2026-modulo-10-derivados-1', title: 'FC 2026 — Instrumentos derivados I', type: 'presentation', year: 2026, locator: 'Presentación docente, diapositivas 1-31', access: 'available' },
+  { id: 'fc-modulo-10-derivados-2', title: 'FC — Instrumentos derivados II: swaps', type: 'presentation', locator: 'Presentación docente, diapositivas 1-18; año no visible', access: 'available' },
   { id: 'pascale-2009', title: 'Decisiones Financieras', authors: ['Ricardo Pascale'], type: 'bibliography', edition: '6.ª', year: 2009, access: 'metadata-only' },
   { id: 'ross-westerfield-jaffe-2012', title: 'Finanzas Corporativas', authors: ['Stephen Ross', 'Randolph Westerfield', 'Jeffrey Jaffe'], type: 'bibliography', edition: '9.ª o posterior', year: 2012, access: 'metadata-only' },
   { id: 'dumrauf-2013', title: 'Finanzas Corporativas: un enfoque latinoamericano', authors: ['Guillermo Dumrauf'], type: 'bibliography', edition: '2.ª', year: 2013, locator: 'Cap. 1, secciones 1.1-1.4, 1.6 y 1.8 (referencia indicada por la presentación docente)', access: 'metadata-only' }
