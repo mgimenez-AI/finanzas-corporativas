@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 5.1-5.5, 6.3-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -69,3 +69,15 @@ El único ejemplo numérico del módulo es la valuación relativa URUGUAYCOM. Lo
 | 4.5 | Riesgo/incertidumbre, sensibilidad, escenarios, árboles, Hertz y Monte Carlo | Procedimientos cualitativos | `sourced` | Ejercicios y calibración probabilística |
 
 Los dos casos del archivo de ejemplos son enunciados sin solución. No se presentan como ejemplos resueltos ni elevan el estado académico.
+
+## Cobertura incorporada — Módulo 5 de 2026
+
+| Tema | Cobertura principal | Fórmulas | Estado |
+|---|---|---|---|
+| 5.1 | Riesgo, factores, primas, riesgo sistemático e idiosincrático | TRR libre de riesgo más prima | `sourced` |
+| 5.2 | Trade-off, retornos, media, varianza, desvío y volatilidad | Retorno esperado, varianza y CV | `sourced` |
+| 5.3 | Portafolios, diversificación y frontera eficiente | Retorno, varianza y correlación | `sourced` |
+| 5.4 | RMC, separación, recta característica y beta | RMC, regresión y beta | `sourced` |
+| 5.5 | CAPM, LMV, supuestos y desempeño | CAPM, beta de cartera, Sharpe y Treynor | `sourced` |
+
+Las preguntas son originales de la aplicación. Ningún tema pasa a `practiced`, `exam-validated` ni `verified`.

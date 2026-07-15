@@ -11,6 +11,9 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `fc-2026-modulo-4-decisiones-inversion` | Presentación docente | FC 2026 — Módulo 4: Decisiones de inversión, 40 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 4.1-4.4 |
 | `fc-2026-modulo-4-ejemplos` | Práctico sin solución | Dos casos: reemplazo de maquinaria e inversión con inflación | Inspeccionado fuera del repositorio | Alcance pendiente de 4.2 y 4.4; no se registra como ejemplo resuelto |
 | `fc-2026-modulo-4-incertidumbre` | Presentación docente | FC 2026 — Módulo 4.5: inversiones en incertidumbre, 21 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 4.5 |
+| `fc-2026-modulo-5-1-riesgo` | Presentación docente | FC 2026 — Módulo 5.1: riesgo, parte I, 37 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.1-5.2 |
+| `fc-2026-modulo-5-2-portafolio` | Presentación docente | FC 2026 — Módulo 5.2: teoría del portafolio, 40 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.1 y 5.3 |
+| `fc-2026-modulo-5-3-capm` | Presentación docente | FC 2026 — Módulo 5.3: mercado de capitales y CAPM, 44 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.4-5.5 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -40,6 +43,12 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - La comparación de proyectos mutuamente excluyentes se resuelve por mayor VPN; la tasa de Fisher se presenta como TIR del flujo incremental.
 - El tratamiento de inflación exige coherencia entre flujos y tasas. Las convenciones concretas de PAM, índices y redondeo quedan pendientes de soluciones docentes.
 - Ningún contenido de este lote se clasifica como `practiced`, `exam-validated` o `verified`.
+
+## Notas del Módulo 5
+
+- Los datos históricos de mercados y capturas fechadas ilustran relaciones riesgo-retorno; no son parámetros permanentes.
+- Las fórmulas estadísticas distinguen estimación muestral y relaciones de modelo. CAPM y la RMC conservan sus supuestos explícitos.
+- Los ejemplos numéricos de las diapositivas son demostraciones docentes; no se reproducen extensamente ni elevan por sí solos el estado a `practiced`.
 
 ## Notas del Módulo 2
 

@@ -11,7 +11,7 @@ describe('inventario oficial', () => {
     expect(topics.find((topic) => topic.code === '1.2')?.formulas[0].id).toBe('formula-eva-01')
   })
   it('mantiene sin desarrollar los temas no relacionados', () => {
-    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre'])
+    const moduleSources = new Set(['fc-2026-modulo-1-objetivos-alcance', 'fc-2026-modulo-2-funcion-financiera', 'fc-2026-modulo-3-elementos-valuacion', 'fc-2026-modulo-4-decisiones-inversion', 'fc-2026-modulo-4-ejemplos', 'fc-2026-modulo-4-incertidumbre', 'fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm'])
     const unrelated = topics.filter((topic) => !topic.evidence.sourceIds.some((sourceId) => moduleSources.has(sourceId)))
     expect(unrelated.every((topic) => topic.status === 'identified' && topic.theory.length === 0)).toBe(true)
   })
@@ -33,5 +33,12 @@ describe('inventario oficial', () => {
     expect(main.map((topic) => topic.code)).toEqual(['4.1','4.2','4.3','4.4'])
     expect(uncertainty.map((topic) => topic.code)).toEqual(['4.5'])
     expect([...main, ...uncertainty].every((topic) => topic.status === 'sourced')).toBe(true)
+  })
+  it('incorpora las tres partes del Módulo 5 en los cinco temas de riesgo', () => {
+    const ids = new Set(['fc-2026-modulo-5-1-riesgo', 'fc-2026-modulo-5-2-portafolio', 'fc-2026-modulo-5-3-capm'])
+    const developed = topics.filter((topic) => topic.evidence.sourceIds.some((id) => ids.has(id)))
+    expect(developed.map((topic) => topic.code)).toEqual(['5.1','5.2','5.3','5.4','5.5'])
+    expect(developed.every((topic) => topic.status === 'sourced')).toBe(true)
+    expect(topics.find((topic) => topic.code === '5.5')?.formulas.some((formula) => formula.id === 'formula-capm-01')).toBe(true)
   })
 })
