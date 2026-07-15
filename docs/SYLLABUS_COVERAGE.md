@@ -2,7 +2,7 @@
 
 Fuente curricular: Ficha de Unidad Curricular A71, vigencia marzo de 2026, contenido desagregado en páginas 4 y 5. El archivo fuente no forma parte del repositorio.
 
-La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 5.1-5.5, 6.1-6.5, 7.2 y 7.4 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los restantes permanecen `identified`.
+La presencia de los 40 subtemas está verificada en el programa. Los temas 1.1-1.3, 2.1-2.2, 3.1-3.3, 4.1-4.5, 5.1-5.5, 6.1-6.5 y 7.1-7.10 incorporan contenido preliminar respaldado por presentaciones docentes de 2026 y quedan en estado `sourced`; los temas 8.1-8.3 y 9.1-9.4 permanecen `identified`.
 
 | Unidad | Subtemas oficiales | Cantidad |
 |---|---|---:|
@@ -92,3 +92,14 @@ Las preguntas son originales de la aplicación. Ningún tema pasa a `practiced`,
 | 6.5 | CPC y contraste con rentabilidad de activos | Conserva CPC previo | `sourced` |
 
 El material no aporta un desarrollo autónomo nuevo de 6.4; ese tema conserva la cobertura previa de CAPM. Ningún estado supera `sourced`.
+
+## Cobertura incorporada — Estructura financiera
+
+| Bloque | Temas | Contenido | Estado |
+|---|---|---|---|
+| Mercados y valor | 7.1-7.2 | Perfección, eficiencia, VPN financiero y estructura/valor | `sourced` |
+| Teorías | 7.3-7.5 | M&M, trade-off, agencia, señalización y tradicional | `sourced` |
+| Modelos | 7.6-7.9 | General, Donaldson, crecimiento sostenible y NAF | `sourced` |
+| Dividendos | 7.10 | Irrelevancia, imperfecciones, factores y política residual | `sourced` |
+
+La presentación denominada Módulo 8 se asigna a 7.10 según el inventario oficial. La Unidad 8 curricular continúa pendiente por falta de material específico.

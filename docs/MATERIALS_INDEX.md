@@ -15,6 +15,9 @@ Los archivos fuente no se almacenan en el repositorio. Este índice registra ún
 | `fc-2026-modulo-5-2-portafolio` | Presentación docente | FC 2026 — Módulo 5.2: teoría del portafolio, 40 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.1 y 5.3 |
 | `fc-2026-modulo-5-3-capm` | Presentación docente | FC 2026 — Módulo 5.3: mercado de capitales y CAPM, 44 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 5.4-5.5 |
 | `fc-2026-modulo-6-financiamiento-apalancamiento` | Presentación docente | FC 2026 — Módulo 6: decisiones de financiamiento y apalancamiento, 55 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 6.1-6.3 y ampliación de 6.5 |
+| `fc-2026-modulo-7-1-estructura` | Presentación docente | FC 2026 — Módulo 7.1: estructura financiera, parte I, 45 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 7.1-7.5 |
+| `fc-2026-modulo-7-2-modelos` | Presentación docente | FC 2026 — Módulo 7.2: modelos de estructura financiera, 24 diapositivas | Inspeccionado fuera del repositorio | Desarrollo de 7.6-7.9 |
+| `fc-2026-modulo-8-dividendos` | Presentación docente | FC 2026 — Módulo 8: política de dividendos, 34 diapositivas | Inspeccionado fuera del repositorio | Desarrollo del subtema oficial 7.10 |
 | `pascale-2009` | Bibliografía general | Ricardo Pascale, *Decisiones Financieras*, 6.ª ed. | Contenido no suministrado | Referencia conceptual secundaria |
 | `ross-westerfield-jaffe-2012` | Bibliografía general | *Finanzas Corporativas*, 9.ª ed. o posterior | Contenido no suministrado | Referencia conceptual secundaria |
 | `dumrauf-2013` | Bibliografía general | Guillermo Dumrauf, *Finanzas Corporativas: un enfoque latinoamericano*, 2.ª ed., 2013 | Contenido no suministrado | Referencia conceptual secundaria indicada por el Módulo 2 |
@@ -56,6 +59,12 @@ Los próximos lotes deben recibir un ID, descripción, tipo, fecha o período cu
 - Los indicadores LO, LF y LC se presentan como exposición para un nivel de actividad, no como medidas probabilísticas de riesgo.
 - La recomendación de endeudarse según el diferencial ROA-costo se conserva condicionada: mayor ROE no implica por sí solo creación de valor.
 - El costo de deuda se registra como TIR del flujo completo del deudor, incluidos gastos y efectos fiscales aplicables.
+
+## Notas de estructura financiera y dividendos
+
+- La numeración docente “Módulo 8” corresponde al subtema oficial 7.10; no se asigna a la Unidad 8 curricular de corto plazo.
+- Los ejemplos legales, fiscales y de mercado se conservan como referencias de la presentación y requieren verificación de vigencia antes de aplicarse.
+- Los ejemplos numéricos ilustran modelos, pero no se convierten en ejercicios oficiales ni elevan estados académicos.
 
 ## Notas del Módulo 2
 

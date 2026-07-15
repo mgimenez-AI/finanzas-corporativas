@@ -93,3 +93,9 @@ Los datos históricos, índices y capturas fechadas se tratan como ilustraciones
 La presentación desarrolla 6.1-6.3 y aporta una relación explícita a 6.5. El efecto leverage se enseña como amplificación del ROE, pero la aplicación documenta que el diferencial favorable no sustituye la comparación con el costo de capital ni una evaluación integral del riesgo.
 
 Los ejemplos se usan para interpretar las fórmulas, sin copiar tablas extensas. No se atribuye cobertura nueva a 6.4 porque este archivo no desarrolla por separado la estimación de fondos propios; se conserva allí el contenido previo trazado a los módulos 3 y 5.
+
+## D-020 — Estructura financiera y numeración de dividendos
+
+Las partes 7.1 y 7.2 cubren 7.1-7.9. El archivo docente “Módulo 8 Política de Dividendos” se integra en 7.10 porque el programa oficial ubica allí inversiones, financiamiento y dividendos; no se confunde con la Unidad 8 oficial de finanzas de corto plazo.
+
+M&M, teoría tradicional y trade-off se mantienen como marcos distintos con sus supuestos. Las menciones a normativa, impuestos y evidencia de mercado se documentan como material docente sujeto a vigencia. Todos los temas quedan como máximo en `sourced`.
